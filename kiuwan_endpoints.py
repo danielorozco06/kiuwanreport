@@ -21,8 +21,8 @@ def get_kiuwan_applications():
     else:
         return f"Error: {response.status_code} - {response.text}"
 
-def get_application_defects(application_name):
-    url = f"https://api.kiuwan.com/applications/defects"
+def get_application_info(application_name):
+    url = f"https://api.kiuwan.com/apps/{application_name}"
     username = os.getenv("KIUWAN_USERNAME")
     password = os.getenv("KIUWAN_PASSWORD")
     corporate_domain_id = os.getenv("KIUWAN_CORPORATE_DOMAIN_ID")
@@ -31,11 +31,7 @@ def get_application_defects(application_name):
         "X-KW-CORPORATE-DOMAIN-ID": corporate_domain_id
     }
 
-    params = {
-        "application": application_name
-    }
-
-    response = requests.get(url, auth=(username, password), headers=headers, params=params)
+    response = requests.get(url, auth=(username, password), headers=headers)
 
     if response.status_code == 200:
         return response.json()

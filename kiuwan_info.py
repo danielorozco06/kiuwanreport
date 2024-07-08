@@ -1,4 +1,4 @@
-from kiuwan_endpoints import get_kiuwan_applications, get_application_defects
+from kiuwan_endpoints import get_kiuwan_applications, get_application_info
 from utils import filter_as400_applications
 
 if __name__ == "__main__":
@@ -7,9 +7,9 @@ if __name__ == "__main__":
     iseries_applications = filter_as400_applications(all_applications)
     print(iseries_applications)
 
-    print("\nFetching defects for iSeries applications:")
+    print("\nFetching info and defects for iSeries applications:")
     for app in iseries_applications:
         app_name = app['name']
-        print(f"\nDefects for {app_name}:")
-        defects = get_application_defects(app_name)
-        print(defects)
+        print(f"\nInfo for {app_name}:")
+        app_info = get_application_info(app_name)
+        print(app_info)
