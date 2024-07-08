@@ -1,4 +1,4 @@
-from kiuwan_endpoints import get_kiuwan_info, get_kiuwan_applications
+from kiuwan_endpoints import  get_kiuwan_applications
 from utils import filter_as400_applications
 
 if __name__ == "__main__":
