@@ -1,4 +1,3 @@
-import json
 from kiuwan_endpoints import get_kiuwan_applications, get_application_info
 from utils import filter_as400_applications, export_app_info_to_json
 
