@@ -1,4 +1,5 @@
 from kiuwan_endpoints import get_kiuwan_info, get_kiuwan_applications
+from utils import filter_as400_applications
 
 if __name__ == "__main__":
     print("Fetching Kiuwan info:")
@@ -6,5 +7,6 @@ if __name__ == "__main__":
     print(info)
 
     print("\nFetching Kiuwan applications:")
-    applications = get_kiuwan_applications()
-    print(applications)
+    all_applications = get_kiuwan_applications()
+    iseries_applications = filter_as400_applications(all_applications)
+    print(iseries_applications)
