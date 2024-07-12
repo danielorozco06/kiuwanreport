@@ -1,0 +1,147 @@
+{
+    "name": "ISXXX0001",
+    "description": "qwerewr",
+    "auditName": "Canno234234",
+    "applicationBusinessValue": "CRITICAL",
+    "applicationPortfolios": {},
+    "label": "WI:12w34234 Build.352123424",
+    "date": "2023-02-20T21:05:56Z",
+    "modelId": 234324,
+    "encoding": "UTF-8",
+    "analysisCode": "A-7e7-2343435",
+    "analysisURL": "https://www.kiuwan.com/saas/web/dashboard/",
+    "analysisBusinessValue": "CRITICAL",
+    "analysisPortfolios": {},
+    "analysisStatus": "FINISHED",
+    "languages": [
+        {
+            "name": "rpg4",
+            "size": 23454
+        }
+    ],
+    "unparsedFiles": [],
+    "quality_model": "MODEL",
+    "ordered_by": "RTC Agent",
+    "Risk index": {
+        "value": 0.0,
+        "children": [
+            {
+                "name": "Efficiency",
+                "value": 0.0
+            },
+            {
+                "name": "Maintainability",
+                "value": 0.0
+            },
+            {
+                "name": "Portability",
+                "value": 0.0
+            },
+            {
+                "name": "Reliability",
+                "value": 0.0
+            },
+            {
+                "name": "Security",
+                "value": 0.0
+            }
+        ]
+    },
+    "Quality indicator": {
+        "value": 0.0,
+        "children": [
+            {
+                "name": "Efficiency",
+                "value": 0.0
+            },
+            {
+                "name": "Maintainability",
+                "value": 0.0
+            },
+            {
+                "name": "Portability",
+                "value": 0.0
+            },
+            {
+                "name": "Reliability",
+                "value": 0.0
+            },
+            {
+                "name": "Security",
+                "value": 0.0
+            }
+        ]
+    },
+    "Effort to target": {
+        "value": 0.0,
+        "children": [
+            {
+                "name": "Efficiency",
+                "value": 0.0
+            },
+            {
+                "name": "Maintainability",
+                "value": 0.0
+            },
+            {
+                "name": "Portability",
+                "value": 0.0
+            },
+            {
+                "name": "Reliability",
+                "value": 0.0
+            },
+            {
+                "name": "Security",
+                "value": 0.0
+            }
+        ]
+    },
+    "Main metrics": [
+        {
+            "name": "Duplicated code",
+            "value": 0.0
+        },
+        {
+            "name": "Total defects",
+            "value": 0.0
+        },
+        {
+            "name": "Very high defects",
+            "value": 0.0
+        },
+        {
+            "name": "Supressed defects",
+            "value": 0.0
+        },
+        {
+            "name": "Files",
+            "value": 0.0
+        },
+        {
+            "name": "Lines of code",
+            "value": 0.0
+        },
+        {
+            "name": "Complexity",
+            "value": 0.0
+        }
+    ],
+    "Security": {
+        "Rating": 0.0,
+        "Effort": {
+            "3Stars": 0.0,
+            "5Stars": 0.0,
+            "2Stars": 0.0,
+            "4Stars": 0.0
+        },
+        "Vulnerabilities": {
+            "High": 0.0,
+            "Low": 0.0,
+            "VeryHigh": 0.0,
+            "Total": 0,
+            "Normal": 0.0,
+            "VeryLow": 0.0
+        }
+    }
+}
