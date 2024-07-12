@@ -98,7 +98,7 @@ def transform_json_objects(json_objects):
             ),
         }
         transformed_objects.append(transformed_obj)
-    return transformed_objects
+    return sorted(transformed_objects, key=lambda x: x['name'])
 
 
 if __name__ == "__main__":
