@@ -2,6 +2,17 @@ import json
 import os
 
 
+def filter_applications(applications, quality_model):
+    """
+    Filter applications based on the quality model.
+    If quality_model is 'X', only include apps with X quality model.
+    If quality_model is 'ALL', include all apps.
+    """
+    if quality_model == "ALL":
+        return applications
+    return [app for app in applications if app.get("quality_model") == quality_model]
+
+
 def validate_and_format_app_name(app_info):
     """
     Validate the quality_model and format the app name if necessary.
