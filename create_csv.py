@@ -1,5 +1,6 @@
 import json
 import os
+import csv
 
 
 def read_json_files(folder_path):
@@ -101,8 +102,30 @@ def transform_json_objects(json_objects):
     return sorted(transformed_objects, key=lambda x: x['name'])
 
 
+def export_to_csv(data, output_file):
+    """
+    Export the transformed data to a CSV file.
+    """
+    if not data:
+        print("No data to export.")
+        return
+
+    fieldnames = data[0].keys()
+
+    with open(output_file, 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in data:
+            writer.writerow(row)
+
+    print(f"Data exported to {output_file}")
+
+
 if __name__ == "__main__":
     output_folder = "output"
     json_data = read_json_files(output_folder)
     transformed_data = transform_json_objects(json_data)
     print(f"Transformed {len(transformed_data)} JSON objects.")
+    
+    csv_output_file = "kiuwan_data.csv"
+    export_to_csv(transformed_data, csv_output_file)
